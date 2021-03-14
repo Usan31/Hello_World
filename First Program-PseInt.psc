@@ -5,43 +5,35 @@ Algoritmo Pruebas_de_Comandos
 	
 //Empezamos con un saludo
 	Escribir "Hola";
-	Esperar 1 Segundos ;
-	Escribir "bienvenido a esta prueba"; 
-	Esperar 1 Segundos ;
-	Escribir "de los comandos de PseInt";
+    Esperar 1 Segundos ;
+    Escribir "bienvenido a esta prueba"; 
+    Esperar 1 Segundos ;
+    Escribir "de los comandos de PseInt";
 	
 //respondemos, pero el programa solo
 //quiere escucharte decir hola nada más
 //Opt: son las posibles respuestas del usuario 
-	Definir Opt1 como caracter;
-	Definir Opt1_1 como caracter;
-	Definir Opt1_2 como caracter;
-	Definir Opt1_3 como caracter;
-	Definir Opt1_4 como caracter;  
-	Definir Opt1_5 como caracter; 
-	Definir Resp1 como caracter;
-	Leer Resp1;
-	Opt1<- "Hola";
-	Opt1_1<- " Hola";
-	Opt1_2<- "hola";
-	Opt1_3<- " hola";
-	Opt1_4<- "ola";
-	Opt1_5<- " ola";
+	Definir Opt1, Opt1_1, Opt1_2, Opt1_3, Opt1_4, Opt1_5, Resp1 como caracter;
+    	Leer Resp1;
+     	Opt1<- "Hola";
+     	Opt1_1<- " Hola";
+     	Opt1_2<- "hola";
+     	Opt1_3<- " hola";
+     	Opt1_4<- "ola";
+     	Opt1_5<- " ola";
 	
 //Se trata de cumplir si la respuesta es un hola
 //para poder seguir con el algoritmo 
 	Mientras Resp1<>Opt1 y Resp1<>Opt1_1 y Resp1<>Opt1_2 y Resp1<>Opt1_3 y Resp1<>Opt1_4 y Resp1<>Opt1_5 Hacer 
-  |
-	|	  Si Resp1=Opt1 y Resp1=Opt1_1 y Resp1=Opt1_2 y Resp1=Opt1_3 y Resp1=Opt1_4 y Resp1=Opt1_5 Entonces
-	|	  |	Escribir "";
-	|	  SiNo
-	|	  | 	Escribir "Hey!! solo di hola porfavor";
-	|	 FinSi
-	|	 Esperar 0.5 Segundos ;
-	|	 Escribir "Otra vez";
-	| 	Leer Resp1;
-  |
-	FinMientras ;
+		Si Resp1=Opt1 y Resp1=Opt1_1 y Resp1=Opt1_2 y Resp1=Opt1_3 y Resp1=Opt1_4 y Resp1=Opt1_5 Entonces
+			Escribir "";
+		SiNo
+		  	Escribir "Hey!! solo di hola porfavor";
+		FinSi
+		Esperar 0.5 Segundos ;
+		Escribir "Otra vez";
+	 	Leer Resp1;
+  	FinMientras;
 	
 //Una vez que contestamos correcto seguimos adelante 
 //Y el programa sigue con su proceso 
@@ -70,59 +62,52 @@ Algoritmo Pruebas_de_Comandos
 //si el usuario responde correctamente 
 	Escribir "el dar un dato es? :";
 	Leer Resp2 ;
-	Mientras Resp2 <> Opt2 Hacer
-  |
-	|	 si Resp2=Opt2 entonces 
-	|	 |  Escribir "";
-	|	 SiNo
-	|	 |	Escribir "otra vez, se que lo sabes";
-	|	 FinSi
-	|	 Escribir "vamos, de nuevo";
-	|	 Leer Resp2;
-  |
+	Mientras Resp2 <> Opt2 Hacer  
+		si Resp2=Opt2 entonces 
+			Escribir "";
+		SiNo
+		 	Escribir "otra vez, se que lo sabes";
+		FinSi
+		Escribir "vamos, de nuevo";
+		Leer Resp2;
 	FinMientras
+	
 	Escribir "perfecto ....";
 	Escribir "y el de mostrar es? :";
-
 	Leer Resp2_1;
 	Mientras Resp2_1 <> Opt2_1 Hacer
-  |
-	|	 Si Resp2_1 = Opt2_1 entonces 
-	|	 |	Escribir "" ;
-	|	 SiNo
-	|	 |	Escribir " porfavor, no mames";
-	|	 FinSi
-	|	 Escribir "otra vez porfavor";
-	|	 leer Resp2_1;
-  |
-	FinMientras
+		Si Resp2_1 = Opt2_1 entonces 
+			Escribir "" ;
+		SiNo
+			Escribir " porfavor, no mames";
+		FinSi
+		Escribir "otra vez porfavor";
+		leer Resp2_1;
+  	FinMientras
 	escribir "exactamente mi querido amigo";
 	
-	//se hace una despedida, ya que me quede sin ideas 
-	//jaja
+//se hace una despedida, ya que me quede sin ideas 
+//jaja
 	Escribir "Bueno eso es todo, de momento mi creador";
 	Escribir "Se quedo sin ideas";
 	Escribir "nos vemos pronto" ;
 	Escribir "Adios!!";
 	
-	//se hace otra operacion para ver si el usuario 
-	//responde bien a la despedida
+//se hace otra operacion para ver si el usuario 
+//responde bien a la despedida
 	Definir Despedida como caracter; 
 	Despedida<- "Adios";
 	Definir RespD Como Caracter;
 	Leer RespD; 
   
-	Mientras RespD<>Despedida Hacer
-  |  
-	|	 Si RespD = Despedida Entonces
-	|	 |	Escribir "";
-	|	 Sino 
-	|	 |	Escribir "HEY!!, se más educado y dime solo un HOLA";
-	|	 FinSi
-  |
-	|	 Escribir "vamos de nuevo";
-	|	 Leer RespD;
-  |
+	Mientras RespD<>Despedida Hacer  
+		Si RespD = Despedida Entonces
+			Escribir "";
+		Sino 
+		 	Escribir "HEY!!, se más educado y dime solo un HOLA";
+		FinSi
+ 		Escribir "vamos de nuevo";
+		Leer RespD;
 	FinMientras
 	Escribir "ahora si, nos vemos";
 	Escribir "ten un buen día";
