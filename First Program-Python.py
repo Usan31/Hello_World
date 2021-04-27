@@ -5,7 +5,8 @@
     a ver si sale """ 
 
 #Empezamos con un saludo como siempre 
-print("+++++++++++++++++++++++++++++++")
+deco = "+++++++++++++++++++++++++++++++"
+print(deco)
 name1 = "Hola" #un comando simple como el dar datos a la variable
 text1 = """ mi nombre es Isaac, soy un programador junior
 que apenas estoy aprendiendo el lenguaje de python
@@ -20,5 +21,5 @@ text4 = "Pseint"
 #ah imprimir, pero usando los llamados F-strings 
 print(f"""llevo {text2} programando en {text3},  
 aunque estuve practicando logica en {text4}""")
-print("+++++++++++++++++++++++++++++++")
+print(deco)
 
